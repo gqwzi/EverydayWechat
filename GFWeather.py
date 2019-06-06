@@ -101,6 +101,7 @@ class gfweather:
             return
         for girlfriend in self.girlfriend_list:
             wechat_name = girlfriend.get('wechat_name')
+            print('===='+wechat_name)
             friends = itchat.search_friends(name=wechat_name)
             if not friends:
                 print('昵称错误')
